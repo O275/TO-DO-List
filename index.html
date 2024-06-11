@@ -5,32 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TO-DO List</title>
   <link rel="stylesheet" href="./style.css">
-  <!-- <script src="/package.json"></script> -->
+
 </head>
 <body>
   <h1> TO DO</h1>
-    <fieldset>
-      <input type="checkbox" id="list1" name="list1" />
-      <label for="list1">Users should be able to view all of the to-do tasks</label><br>
 
-      <input type="checkbox" id="list2" name="list2" />
-      <label for="list2">Users should be able to add a to-do to the list of to-do tasks</label><br>
+  <img src="https://cdn.vox-cdn.com/thumbor/eQhzzdmoRkonEYFnyxtKCqy7YxA=/0x0:1280x720/1200x675/filters:focal(538x258:742x462)/cdn.vox-cdn.com/uploads/chorus_image/image/61746607/maxresdefault.0.jpg" alt="Luigi"><br>
 
-      <input type="checkbox" id="list3" name="list3" />
-      <label for="list3">Users should be able to mark a task as completed by crossing it out on click</label><br>
+  <input type="text" id="addTo" placeholder="Add To Do">
+  <input type="submit" onclick="addNewItem()" value="Add More Stuff">
 
-     <input type="checkbox" id="list4" name="list4" />
-      <label for="list4">Users  should be able to remove to-do tasks by removing those elements from the DOM</label><br>
+    <ul id="myUl">
 
-      <input type="checkbox" id="list4" name="list4" />
-      <label for="list4">The page should be aesthetically pleasing (aka be styled)</label><br>
 
-      <input type="text" id="addTo" placeholder="Add To Do">
-      <input type="submit" value="Add More Stuff">
-    </fieldset>
+      <li for="list1"><input type="checkbox" id="list1" name="list1" onclick="toggleTaskCompletion(event)"> Users should be able to view all of the to-do tasks</li><br>
+
+
+      <li for="list2"><input type="checkbox" id="list2" name="list2" onclick="toggleTaskCompletion(event)"/>Users should be able to add a to-do to the list of to-do tasks</li><br>
+
+
+      <li for="list3"><input type="checkbox" id="list3" name="list3" onclick="toggleTaskCompletion(event)"/>Users should be able to mark a task as completed by crossing it out on click</li><br>
+
+
+      <li for="list4"><input type="checkbox" id="list4" name="list4" onclick="toggleTaskCompletion(event)"/>Users  should be able to remove to-do tasks by removing those elements from the DOM</li><br>
+
+
+      <li for="list5"><input type="checkbox" id="list5" name="list5" onclick="toggleTaskCompletion(event)"/>The page should be aesthetically pleasing (aka be styled)</li><br>
+
+    </ul>
 
   <script src="./index.js"></script>
 </body>
 </html>
-
-<!-- .appendChild(document.createElement("ul")) -->

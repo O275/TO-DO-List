@@ -1,4 +1,47 @@
-body {
+ h1 {
+  font-size: 100px;
+  color: #2cf504;
+  outline: 4px solid #000000;
+ }
+
+  body {
  margin-top: 0;
  text-align: center;
+ background-color: grey;
 }
+
+#myUl li{
+  list-style-type: none;
+}
+
+.submit {
+  background-color: #d3d601;
+  color: #1b0b75;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+ .crossed-out {
+  text-decoration: line-through
+}
+
+.checkbox:hover {
+  cursor:pointer;
+
+}
+
+.close:hover {
+  background-color: red;
+  color:white;
+  cursor: pointer;
+}
+.container{
+  display: block;
+
+  position: relative;
+  padding-left: ;
+}
+
+#addT
